@@ -12,16 +12,13 @@ var userClickedPattern = [];
 
 var randomChosenColour;
 
-$(document).keypress(function (event){
+$(document).keypress(function (){
 	if (!started) {
 		started = true;
 		
 		$("h1").text("Level "+level);
 
 		nextSequence();
-	}
-	else{
-		started = false;
 	}
 });
 
